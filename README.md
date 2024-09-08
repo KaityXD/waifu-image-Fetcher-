@@ -48,3 +48,29 @@ python3 fletcher.py -c <number> [-n] [-s <save-path>]
 1. **Fetch 10 SFW Waifu Images:**
 
    ```bash
+   python3 fletcher.py -c 10
+   ```
+
+2. **Fetch 100 NSFW Waifu Images and Save to Custom Directory:**
+
+   ```bash
+   python3 fletcher.py -n -c 100 -s ./my_waifus
+   ```
+
+3. **Fetch 3000 SFW Waifu Images and Save to Default Directory:**
+
+   ```bash
+   python3 fletcher.py -c 3000
+   ```
+
+## License
+
+We dont have one
+
+## Contributing
+
+Feel free to submit pull requests or open issues if you find bugs or have suggestions for improvements!
+
+## Contact
+
+For any questions, please reach out to [Emaill](mailto: gzyrrr123@gmail.com).
