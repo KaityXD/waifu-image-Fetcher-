@@ -73,4 +73,4 @@ Feel free to submit pull requests or open issues if you find bugs or have sugges
 
 ## Contact
 
-For any questions, please reach out to [Emaill](mailto: gzyrrr123@gmail.com).
+For any questions, please reach out to [Emaill](mailto:gzyrrr123@gmail.com).
