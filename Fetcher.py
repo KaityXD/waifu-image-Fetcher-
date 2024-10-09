@@ -1,11 +1,15 @@
 import requests
 import os
 import argparse
+import random
+import string
+
 
 def fetch_waifu(nsfw: bool, save_path: str, count: int):
     category = "nsfw" if nsfw else "sfw"
     url = f"https://api.waifu.pics/{category}/waifu"
-
+    random_letters = ''.join(random.choices(string.ascii_lowercase, k=6))
+    
     if not os.path.exists(save_path):
         os.makedirs(save_path)
 
@@ -19,7 +23,7 @@ def fetch_waifu(nsfw: bool, save_path: str, count: int):
 
             if image_url:
                 image_data = requests.get(image_url).content
-                file_name = os.path.join(save_path, f"waifu_{category}_{i+1}.jpg")
+                file_name = os.path.join(save_path, f"waifu_{category}_{i+1}_{random_letters}.jpg")
 
                 with open(file_name, 'wb') as file:
                     file.write(image_data)
@@ -44,3 +48,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
