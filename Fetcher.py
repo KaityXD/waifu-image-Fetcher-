@@ -9,7 +9,7 @@ def fetch_waifu(nsfw: bool, save_path: str, count: int):
     category = "nsfw" if nsfw else "sfw"
     url = f"https://api.waifu.pics/{category}/waifu"
     random_letters = ''.join(random.choices(string.ascii_lowercase, k=6))
-    
+
     if not os.path.exists(save_path):
         os.makedirs(save_path)
 
@@ -48,4 +48,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
